@@ -1,0 +1,105 @@
+.journey{
+    width : 50%;
+    margin : 40px auto;
+    height : 400px;
+    margin-bottom: 100px;
+}
+
+.journey h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.journey h1::after{
+    content : "";
+    display : block;
+    width : 10%;
+    border-bottom : 2px solid orange;
+    position: relative;
+    left : 45%;
+}
+
+.journey .journey-tabs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.journey .journey-tabs .journey-tab div p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    cursor : pointer;
+    width : auto;
+}
+.journey .journey-tabs .journey-tab div p:hover{
+    transform: scale(1.1);
+    transition: 0.35s all;
+}
+.qualification-details div div span{
+    display: block;
+}
+.qualification-details div div{
+    background : white;
+    box-shadow: 1px 1px 10px grey;
+    border-radius : 5px 10px ;
+    padding : 20px;
+    border-left : 3px solid orange;
+    width : 45%;
+    margin-top : 20px;
+    position: relative;
+}
+
+.qualification-details div div p{
+    font-weight: Poppins;
+    font-size : 18px;
+
+}
+
+.qualification-details div div span{
+    font-size : 14px;
+}
+.qualification-details div div span:last-child{
+    font-size : 12px;
+}
+
+.qualification-details .education{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.edu-2,.exp-2{
+    position: relative;
+    left : 55%;
+}
+
+.qualification-details .qual::before{
+    content : "";
+    height: 50%;
+    width : 2px;
+    position: absolute;
+    background: orange;
+    left : 50%;
+}
+
+.dot{
+    height : 15px;
+    width : 15px;
+    border-radius: 50%;
+    background: orange;
+    position: absolute;
+    top : 45%;
+    left : calc(100% + 30px);
+}
+
+.dot-2{
+    left : calc(0% - 45px);
+}
+
+.hidden{
+    display: none;
+}
+
+.UnderLine{
+    color : orange;
+}
