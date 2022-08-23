@@ -5,18 +5,19 @@
     width : 90%;
     margin : 0px auto;
     margin-bottom : 0px;
+    margin-top : 40px;
 }
 
 .intro .intro-text{
     line-height: 2;
     text-align: justify;
-    padding : 40px;
 }
 
 .intro .intro-text-div{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .intro .intro-text #name{
@@ -25,22 +26,22 @@
     font-size : 30px;
 }
 
-.intro-img{
-    width : 100%;
-    height : 100%;
-}
 
-.intro .intro-img div{
+
+.intro .intro-img{
+
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 .intro .intro-img img{
-    height : 90%;
-    width: 90%;
-    object-fit : cover;
-    padding : 40px 20px;
+    height: 80%;
+    width : 85%;
+    object-fit: contain;
 }
+
+
 
 
 .intro-text .write-animate{
@@ -85,4 +86,43 @@
     100%{
         left : 0%;
     }
+}
+
+
+
+
+
+@media screen and (max-width : 1000px){
+    .intro{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 0px;
+        width : 100%;
+    }
+    .intro .intro-img img{
+        width: 100%;
+    }
+    .intro .intro-text-div{
+        width : 90%;
+    }
+}
+
+@media screen and (max-width : 600px){
+    
+    .intro .intro-img img{
+        width: 100%;
+    }
+
+    .intro .intro-text #name{
+        font-size: 20px;
+    }
+
+    .intro-text .write-animate{
+        font-size: 16px;
+    }
+    .intro .intro-text-div{
+        font-size: 14px;
+    }
+
 }

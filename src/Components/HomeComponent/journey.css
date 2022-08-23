@@ -1,8 +1,7 @@
 .journey{
-    width : 50%;
+    width : 80%;
     margin : 40px auto;
-    height : 400px;
-    margin-bottom: 100px;
+    height : auto;
 }
 
 .journey h1{
@@ -45,6 +44,7 @@
     padding : 20px;
     border-left : 3px solid orange;
     width : 45%;
+    height: auto;
     margin-top : 20px;
     position: relative;
 }
@@ -89,11 +89,11 @@
     background: orange;
     position: absolute;
     top : 45%;
-    left : calc(100% + 30px);
+    left : calc(110%);
 }
 
 .dot-2{
-    left : calc(0% - 45px);
+    left : calc(-13%);
 }
 
 .hidden{
@@ -102,4 +102,43 @@
 
 .UnderLine{
     color : orange;
+}
+
+@media screen and (max-width : 800px){
+    .edu-2,.exp-2{
+        position: relative;
+        left : 0%;
+    }
+    .qualification-details .education{
+        align-items: center;
+    }
+    .dot{
+        display: none;
+    }
+    .qualification-details div div{
+        width : 100%;
+    }
+    .qualification-details .qual::before{
+        margin-top: 30px;
+        height: 40%;
+    }
+    .journey .journey-tabs{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width : 400px){
+    .qualification-details div div p{
+        font-weight: Poppins;
+        font-size : 16px;
+    
+    }
+    
+    .qualification-details div div span{
+        font-size : 12px;
+    }
+    .qualification-details div div span:last-child{
+        font-size : 10px;
+    }
 }

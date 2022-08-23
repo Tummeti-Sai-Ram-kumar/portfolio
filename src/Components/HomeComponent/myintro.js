@@ -44,7 +44,7 @@ const Intro = (props) => {
     return(
         <section class="intro">
             <div class="intro-text-div" data-aos="fade-up">
-                <p class="intro-text"><span id="name">I am Tummeti Sai Ram Kumar </span>,
+                <p class="intro-text"><span id="name">I am Tummeti Sai Ram Kumar </span>
                 <div class="write-animate">
                     
                     <b>
@@ -66,9 +66,7 @@ const Intro = (props) => {
             </div>
 
             <div class="intro-img" data-aos="zoom-in">
-                <div>
-                    <img src={MyImage}></img>
-                </div>
+                <img src={MyImage}></img>
             </div>
         </section>
     )

@@ -3,7 +3,7 @@ import './header.css'
 
 const Header = () => {
     return(
-        <header class="header" id="home">
+        <header class="header" id="home"> 
 
             <div class="title">
                 <p>Tummeti Sai Ram Kumar</p>
@@ -19,6 +19,9 @@ const Header = () => {
                 </ul>
             </nav>
         </header>
+
+        
+
     )
 }
 

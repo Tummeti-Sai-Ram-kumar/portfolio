@@ -1,8 +1,8 @@
 import React from 'react'
 import './skills.css'
 const Skills = () => {
-    const skills = ["C","C++","Python","HTML","CSS","JavaScript","SQL","BootStrap","ReactJs","NodeJs","Firebase"
-        ,"ExpressJs","MongoDb","API","Materialise CSS","Alexa Skills Kit","Data Structures and Algorithms","Microsoft Excel","Database Management Systems"
+    const skills = ["C","C++","Python","HTML","CSS","SQL","JavaScript","BootStrap","ReactJs","NodeJs","API","Firebase"
+        ,"Materialise CSS","ExpressJs","Alexa Skills Kit","MongoDb","Microsoft Excel","Data Structures and Algorithms","Database Management Systems"
     ]
     return(
         <section class="skills-section" id="skills" data-aos="fade-right">

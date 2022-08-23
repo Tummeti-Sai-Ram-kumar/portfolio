@@ -1,13 +1,10 @@
 .skills-section{
-    width : 70%;
+    width : 90%;
     margin : 0px auto;
-    margin-top : 150px;
-    margin-bottom: 400px;
 }
 
 .skills-section h1{
     text-align: center;
-    
     margin-bottom: 30px;
 
 }
@@ -32,4 +29,12 @@
     border-left: 1px solid orange;
     float: left;
 }
+
+
+@media screen and (max-width : 400px){
+    .skills-section{
+        font-size: 14px;
+    }
+}
+
 

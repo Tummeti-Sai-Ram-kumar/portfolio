@@ -11,7 +11,7 @@
 }
 
 .message{
-    width : 80%;
+    width : 90%;
     margin : 40px auto;
 }
 
@@ -104,3 +104,33 @@
 }
 
 */
+
+@media screen and (max-width : 800px){
+    .message .content{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width : 400px){
+    .location .loc{
+        height : 290px;
+        width : 90%;
+    }
+
+    .map div p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width : 370px){
+    .location .loc{
+        height : 290px;
+        width : 75%;
+    }
+
+    .map div p{
+        font-size: 14px;
+    }
+}
+
+
