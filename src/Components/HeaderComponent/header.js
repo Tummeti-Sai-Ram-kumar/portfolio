@@ -4,7 +4,7 @@ import { useState } from "react";
 import './header.css'
 
 const Header = () => {
-    const [MenuToggle,setMenuToggle] = useState(1);
+    const [MenuToggle,setMenuToggle] = useState(0);
 
 
     return(
