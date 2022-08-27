@@ -13,6 +13,7 @@
 .message{
     width : 90%;
     margin : 40px auto;
+    margin-bottom: 80px;
 }
 
 .message .content{

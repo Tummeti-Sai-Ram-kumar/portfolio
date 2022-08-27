@@ -52,10 +52,10 @@ const Message = () => {
                 <div class="social-links">
                     <h3>Social Links</h3>
                     <ul>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/RamTummeti"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/tummetisairamkumar/"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/tummeti-sai-ram-kumar-355243193/"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://www.facebook.com/tummeti.sairamkumar"><i class="fab fa-facebook"></i></a></li>
                     </ul>
                 </div>
             </div>
