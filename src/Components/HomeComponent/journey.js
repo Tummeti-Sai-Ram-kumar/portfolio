@@ -68,7 +68,7 @@ const Journey = () => {
                             <p class="dot"></p>
                             <p>Intern IT</p>
                             <span>Trident Group</span>
-                            <span>01/2022 - 07/2023</span>
+                            <span>01/2022 - 07/2022</span>
                         </div>
                     </div>
                 </div>
