@@ -151,7 +151,6 @@
         bottom: 40px;
         left : 0px;
         z-index: 2;
-
         animation: bottomAni 0.5s ease-in;
 
     }
@@ -193,7 +192,7 @@
         transition: 0.35s;
     }
 
-    .hidden{
+    .anim{
         display: none;
     }
 

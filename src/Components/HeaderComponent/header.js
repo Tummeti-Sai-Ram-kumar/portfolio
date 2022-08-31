@@ -6,7 +6,6 @@ import './header.css'
 const Header = () => {
     const [MenuToggle,setMenuToggle] = useState(0);
 
-
     return(
         <header class="header" id="home"> 
 
@@ -17,7 +16,7 @@ const Header = () => {
                 <p>Tummeti Sai Ram Kumar</p>
             </div>
 
-            <nav class={MenuToggle ? "nav-contents" : "nav-contents hidden"}>
+            <nav class={MenuToggle ? "nav-contents" : "nav-contents anim"}>
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#skills">Skills</a></li>
