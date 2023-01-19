@@ -73,7 +73,7 @@ const Journey = () => {
                         <div class="exp-4">
                             <p class="dot dot-4"></p>
                             <p>SDE Intern </p>
-                            <span>Pragmatic Play</span>
+                            <span>Pragmatic Play India Pvt.Ltd</span>
                             <span>01/2023 - Present</span>
                         </div>
                         

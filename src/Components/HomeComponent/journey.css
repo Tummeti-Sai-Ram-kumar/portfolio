@@ -68,6 +68,7 @@
     align-items: flex-start;
 }
 
+
 .edu-2,.exp-2 , .exp-4{
     position: relative;
     left : 55%;
@@ -76,6 +77,14 @@
 .qualification-details .qual::before{
     content : "";
     height: 50%;
+    width : 2px;
+    position: absolute;
+    background: orange;
+    left : 50%;
+}
+.qualification-details .experience::before{
+    content : "";
+    height: 55%;
     width : 2px;
     position: absolute;
     background: orange;
@@ -122,9 +131,8 @@
         margin-top: 30px;
         height: 40%;
     }
-    .qualification-details .experience ::before{
-        margin-top: 30px;
-        height: 50%;
+    .qualification-details .experience::before{
+        height: 53%;
     }
     .journey .journey-tabs{
         display: flex;
@@ -140,7 +148,10 @@
     }
     .qualification-details .qual::before{
         margin-top: 30px;
-        height: 39.5%;
+        height: 39%;
+    }
+    .qualification-details .experience::before{
+        height: 43%;
     }
     
     .qualification-details div div span{
