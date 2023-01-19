@@ -53,10 +53,10 @@ const Intro = (props) => {
                     </b>
                     
                 </div>
-                I'm Tummeti Sai Ram Kumar, Software Developer Intern at Pragmatic Play India Pvt.Ltd 
+                I'm Tummeti Sai Ram Kumar, Software Developer Engineer Intern at Pragmatic Play India Pvt.Ltd 
                 and also a final year undergraduate from Lovely Professional University. 
-                I'm passionate about finding innovative solutions for the real time problems, wi
-                th programming and software development as my primary skills, I build solutions 
+                I'm passionate about finding innovative solutions for the real time problems, with 
+                programming and software development as my primary skills, I build solutions 
                 for any test case. I had my developer experience as a student from Google Developer 
                 Student Clubs and Amazon Alexa Developer Community where I created Amazon Alexa skills 
                 which are published in Alexa store. Recently, I also had my internship experience from

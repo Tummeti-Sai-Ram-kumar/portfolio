@@ -37,7 +37,7 @@ const Projects = () => {
                 </div>
                 <div class="project"  data-aos="fade-up">
                     <p class="project-name">Housie Game</p>
-                    <p class="project-desc">A voice enabled Housie Game skill which gonna replace a human game organizer with Alexa</p>
+                    <p class="project-desc">• A voice enabled Housie Game skill which gonna replace a human game organizer with Alexa</p>
                     <a href="https://github.com/Tummeti-Sai-Ram-kumar/Housie-Game"><button>View More <i class="fa-solid fa-arrow-right"></i></button></a>
                 </div>
                 

@@ -120,7 +120,11 @@
     }
     .qualification-details .qual::before{
         margin-top: 30px;
-        height: 42%;
+        height: 40%;
+    }
+    .qualification-details .experience ::before{
+        margin-top: 30px;
+        height: 50%;
     }
     .journey .journey-tabs{
         display: flex;
@@ -133,6 +137,10 @@
         font-weight: Poppins;
         font-size : 16px;
     
+    }
+    .qualification-details .qual::before{
+        margin-top: 30px;
+        height: 39.5%;
     }
     
     .qualification-details div div span{
