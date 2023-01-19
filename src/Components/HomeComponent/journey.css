@@ -1,0 +1,144 @@
+.journey{
+    width : 80%;
+    margin : 40px auto;
+    height : auto;
+}
+
+.journey h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.journey h1::after{
+    content : "";
+    display : block;
+    width : 10%;
+    border-bottom : 2px solid orange;
+    position: relative;
+    left : 45%;
+}
+
+.journey .journey-tabs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.journey .journey-tabs .journey-tab div p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    cursor : pointer;
+    width : auto;
+}
+.journey .journey-tabs .journey-tab div p:hover{
+    transform: scale(1.1);
+    transition: 0.35s all;
+}
+.qualification-details div div span{
+    display: block;
+}
+.qualification-details div div{
+    background : white;
+    box-shadow: 1px 1px 10px grey;
+    border-radius : 5px 10px ;
+    padding : 20px;
+    border-left : 3px solid orange;
+    width : 45%;
+    height: auto;
+    margin-top : 20px;
+    position: relative;
+}
+
+.qualification-details div div p{
+    font-weight: Poppins;
+    font-size : 18px;
+
+}
+
+.qualification-details div div span{
+    font-size : 14px;
+}
+.qualification-details div div span:last-child{
+    font-size : 12px;
+}
+
+.qualification-details .education{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.edu-2,.exp-2 , .exp-4{
+    position: relative;
+    left : 55%;
+}
+
+.qualification-details .qual::before{
+    content : "";
+    height: 50%;
+    width : 2px;
+    position: absolute;
+    background: orange;
+    left : 50%;
+}
+
+.dot{
+    height : 15px;
+    width : 15px;
+    border-radius: 50%;
+    background: orange;
+    position: absolute;
+    top : 45%;
+    left : calc(110%);
+}
+
+.dot-2,.dot-4{
+    left : calc(-13%);
+}
+
+.hidden{
+    display: none;
+}
+
+.UnderLine{
+    color : orange;
+}
+
+@media screen and (max-width : 800px){
+    .edu-2,.exp-2,.exp-4{
+        position: relative;
+        left : 0%;
+    }
+    .qualification-details .education{
+        align-items: center;
+    }
+    .dot{
+        display: none;
+    }
+    .qualification-details div div{
+        width : 100%;
+    }
+    .qualification-details .qual::before{
+        margin-top: 30px;
+        height: 42%;
+    }
+    .journey .journey-tabs{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width : 400px){
+    .qualification-details div div p{
+        font-weight: Poppins;
+        font-size : 16px;
+    
+    }
+    
+    .qualification-details div div span{
+        font-size : 12px;
+    }
+    .qualification-details div div span:last-child{
+        font-size : 10px;
+    }
+}

@@ -1,0 +1,137 @@
+.message h1{
+    text-align: center;
+}
+.message h1::after{
+    content : "";
+    border-bottom  : 2px solid orange;
+    width : 5%;
+    display: block;
+    position: relative;
+    left : 48%;
+}
+
+.message{
+    width : 90%;
+    margin : 40px auto;
+    margin-bottom: 80px;
+}
+
+.message .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.map{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.map div{
+    margin : 30px;
+}
+
+.map .social-links ul{
+    margin-top : 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.map .social-links ul li{
+    list-style: none;
+    height: 40px;
+    width : 40px;
+    border-radius: 50%;
+    background: rgba(255, 165, 0,0.5);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 20px;
+}
+
+.map .social-links ul li:hover{
+    font-weight: bold;
+    transition: 0.35s all;
+    background: rgba(255, 165, 0,1);
+    transform: scale(1.1);
+}
+
+.map .social-links ul li a{
+    text-decoration: none;
+    color : black;
+}
+
+.mail div{
+    margin : 30px;
+}
+
+.location .loc{
+    height : 290px;
+    width : 100%;
+    border : 1px solid grey;
+    margin-top : 5px;
+}
+
+/*
+
+.mail{
+    
+}
+
+.mail form{
+    width : 100%;
+    height : 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    background-color: red;
+}
+
+.mail form div{
+    margin : 30px;
+}
+
+.mail form div label{
+
+}
+
+.mail form div input{
+    outline : none;
+    height : 40px;
+    border-radius : 15px;
+    margin-left : 20px;
+}
+
+*/
+
+@media screen and (max-width : 800px){
+    .message .content{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width : 400px){
+    .location .loc{
+        height : 290px;
+        width : 90%;
+    }
+
+    .map div p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width : 370px){
+    .location .loc{
+        height : 290px;
+        width : 85%;
+    }
+
+    .map div p{
+        font-size: 14px;
+    }
+}
+
+

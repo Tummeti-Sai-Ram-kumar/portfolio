@@ -1,0 +1,128 @@
+.intro{
+    display : grid;
+    grid-template-columns: 1fr 1fr;
+
+    width : 90%;
+    margin : 0px auto;
+    margin-bottom : 0px;
+    margin-top : 40px;
+}
+
+.intro .intro-text{
+    line-height: 2;
+    text-align: justify;
+}
+
+.intro .intro-text-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.intro .intro-text #name{
+    font-family: "Poppins";
+    font-weight: bold;
+    font-size : 30px;
+}
+
+
+
+.intro .intro-img{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.intro .intro-img img{
+    height: 80%;
+    width : 85%;
+    object-fit: contain;
+}
+
+
+
+
+.intro-text .write-animate{
+    background: orange;
+    height : 60px;
+    font-size : 20px;
+    font-weight : 500;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.intro-text .text{
+    position: relative;
+    
+}
+
+.intro-text .first-text{
+    color : white;
+}
+
+.write-animate .second-text:before{
+    content : "";
+    height : 100%;
+    width: 100%;
+    background: orange;
+    border-left: 2px solid black;
+    position: absolute;
+    top : 0px;
+    left : 0;
+    
+    animation: Type 4s steps(12) infinite;
+}
+
+@keyframes Type {
+    0%{
+        left : 0%;
+    }
+    40%,60%{
+        left : 100%
+    }
+    100%{
+        left : 0%;
+    }
+}
+
+
+
+
+
+@media screen and (max-width : 1000px){
+    .intro{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 0px;
+        width : 100%;
+    }
+    .intro .intro-img img{
+        width: 100%;
+    }
+    .intro .intro-text-div{
+        width : 90%;
+    }
+}
+
+@media screen and (max-width : 600px){
+    
+    .intro .intro-img img{
+        width: 100%;
+    }
+
+    .intro .intro-text #name{
+        font-size: 20px;
+    }
+
+    .intro-text .write-animate{
+        font-size: 16px;
+    }
+    .intro .intro-text-div{
+        font-size: 14px;
+    }
+
+}

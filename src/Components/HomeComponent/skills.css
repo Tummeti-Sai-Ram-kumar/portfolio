@@ -1,0 +1,41 @@
+.skills-section{
+    width : 90%;
+    margin : 0px auto;
+    margin-bottom: 250px;
+}
+
+.skills-section h1{
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top : 100px;
+}
+.skills-section h1::after{
+    content : "";
+    display : block;
+    width : 10%;
+    border-bottom : 2px solid orange;
+    position: relative;
+    left : 45%;
+}
+
+.all-skills{
+    margin : 0px;
+}
+
+.all-skills .skill{
+    box-shadow : 1px 1px 10px grey;
+    border-radius : 3px;
+    padding : 5px 15px;
+    margin : 20px;
+    border-left: 1px solid orange;
+    float: left;
+}
+
+
+@media screen and (max-width : 400px){
+    .skills-section{
+        font-size: 14px;
+    }
+}
+
+

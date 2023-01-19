@@ -1,0 +1,67 @@
+.works{
+    width : 90%;
+    margin : 100px auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap : wrap;
+}
+
+.works .work div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.works .work div p{
+    
+    margin : 10px;
+}
+
+.works .work h1{
+    text-align: center;
+    margin-top: 20px;
+}
+.works .work h1::after{
+    content : "";
+    border-bottom : 2px solid orange;
+    width : 10%;
+    position: relative;
+    left : 45%;
+    display: block;
+}
+
+.works .work div{
+    margin-top: 25px;
+    box-shadow: 1px 1px 10px grey;
+    height : auto;
+    width : 350px;
+    border-radius: 10px;
+}
+
+.works .work div:hover{
+    border : 2px solid orange;
+    transform: scale(1.01);
+    transition : 0.15s all;
+}
+
+
+@media screen and (max-width : 600px){
+    .works .work div{
+        width : 250px;
+        height : 300px;
+    }
+}
+
+@media screen and (max-width : 400px){
+    .works .work div{
+        width : 200px;
+        height : 280px;
+        text-align: center;
+    }
+    .work{
+        font-size: 14px;
+    }
+}
