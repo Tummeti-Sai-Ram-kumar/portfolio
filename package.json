@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "homepage": "https://tummeti-sai-ram-kumar.github.io/portfolio",
+  "homepage": "https://tummeti-sai-ram-kumar.github.io/portfolio/",
   "private": true,
   "version": "0.0.1",
   "type": "module",
@@ -8,7 +8,7 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },
