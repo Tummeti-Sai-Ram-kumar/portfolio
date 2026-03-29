@@ -1,0 +1,61 @@
+.skills {
+  width: 90%;
+  margin: 40px auto;
+}
+
+.skills__title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.skills__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-gap: 40px;
+}
+
+.skills__article {
+  box-shadow: 0 0 10px gray;
+}
+
+.skills__articleTitle {
+  font-size: 18px;
+  text-align: center;
+  align-content: center;
+  padding: 10px;
+  background: linear-gradient(135deg, #f6d365, #fda085);
+}
+
+.skills__articleList {
+  list-style: none;
+}
+
+.skills__articleItem {
+  float: left;
+  padding: 5px 10px;
+  margin: 10px;
+  border-left: 2px solid orange;
+  box-shadow: 1px 1px 10px gray;
+}
+
+@media (max-width: 600px) and (orientation: portrait),
+(max-width: 768px) and (orientation: landscape) {
+  .skills {
+    margin: 20px auto;
+  }
+
+  .skills__title {
+    font-size: 18px;
+  }
+
+  .skills__container {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    gap: 20px;
+  }
+
+  .skills__articleTitle {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,93 @@
+.mileStones {
+  width: 90%;
+  margin: 40px auto;
+}
+
+.mileStones__title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.mileStones__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 40px;
+}
+
+.mileStones__articleTitle {
+  position: relative;
+  padding: 10px;
+  font-size: 18px;
+  background: linear-gradient(135deg, #f6d365, #fda085);
+  cursor: pointer;
+}
+
+.mileStones__articleTitle::before,
+.mileStones__articleTitle::after {
+  content: "";
+  position: absolute;
+  top: 30%;
+  right: 8%;
+  background: black;
+  width: 2px;
+  height: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.mileStones__articleTitle::before {
+  transform: rotate(90deg);
+}
+
+.mileStones__article_reveal .mileStones__articleTitle::before {
+  transform: rotate(135deg);
+}
+
+.mileStones__article_reveal .mileStones__articleTitle::after {
+  transform: rotate(45deg);
+}
+
+.mileStones__articleList {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+}
+
+.mileStones__article_reveal .mileStones__articleList {
+  height: 100%;
+}
+
+.mileStones__articleItem {
+  text-align: center;
+  list-style: none;
+  padding: 10px;
+}
+
+@media (max-width: 600px) and (orientation: portrait),
+(max-width: 768px) and (orientation: landscape) {
+  .mileStones { 
+    margin: 0px auto;
+  }
+
+  .mileStones__title {
+    font-size: 18px;
+  }
+
+  .mileStones__container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    font-size: 14px;
+  }
+
+  .mileStones__articleTitle {
+    font-size: 16px;
+  }
+
+  .mileStones__articleTitle::before,
+  .mileStones__articleTitle::after {
+    height: 16px;
+  }
+
+  .mileStones__articleItem {
+    padding: 5px;
+  }
+}

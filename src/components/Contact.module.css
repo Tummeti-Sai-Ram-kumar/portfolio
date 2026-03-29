@@ -1,0 +1,96 @@
+.contact {
+  width: 90%;
+  margin: 40px auto;
+}
+
+.contact__title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 40px;
+}
+
+.contact__content p:nth-child(1) {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.contact__content p:nth-child(2) {
+  text-wrap: nowrap;
+}
+.contact__quickLinks {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact__quickLink {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.contact__quickLink:hover {
+  border: 2px solid orange;
+}
+
+.contact__quickLink--twitter:hover {
+  background: #1DA1F2;
+}
+
+.contact__quickLink--linkedin:hover {
+  background: #0077B5;
+}
+
+.contact__quickLink--github:hover {
+  background: #181717;
+}
+
+.contact__quickLink--gmail:hover {
+  background: #D14836;
+}
+
+.contact__quickLink .contact__icon {
+  transform: scale(0.8);
+  transition: transform 1s ease-in-out;
+}
+
+.contact__quickLink:hover .contact__icon {
+  fill: white;
+  transform: scale(0.8) rotateY(360deg);
+}
+
+@media (max-width: 600px) and (orientation: portrait),
+(max-width: 768px) and (orientation: landscape) {
+  .contact {
+    margin: 20px auto;
+  }
+
+  .contact__title {
+    font-size: 18px;
+  }
+
+  .contact__container {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    gap: 20px;
+  }
+
+  .contact__content p:nth-child(1) {
+    font-size: 16px;
+  }
+
+  .contact__quickLink {
+    width: 40px;
+    height: 40px;
+  }
+}
