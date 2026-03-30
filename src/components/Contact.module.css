@@ -20,6 +20,7 @@
 }
 
 .contact__content p:nth-child(2) {
+  font-size: inherit;
   text-wrap: nowrap;
 }
 .contact__quickLinks {
@@ -85,8 +86,19 @@
     gap: 20px;
   }
 
+  .contact__content {
+    font-size: 14px;
+  }
+
   .contact__content p:nth-child(1) {
     font-size: 16px;
+  }
+
+  .contact__content p:nth-child(2) {
+    font-size: 14px;
+    line-height: 1.4;
+    text-wrap: wrap;
+    overflow-wrap: anywhere;
   }
 
   .contact__quickLink {
