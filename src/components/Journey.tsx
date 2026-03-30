@@ -11,12 +11,12 @@ export const Journey: FC = (): ReactElement => {
     <section className={styles.journey}>
       <h2 className={styles.journey__title}>My Journey</h2>
       <div className={styles.journey__subTitleContainer}>
-        <button className={styles.journey__subTitle} onClick={() => setJourney(JourneySection.EDUCATION)}>
+        <p className={styles.journey__subTitle} onClick={() => setJourney(JourneySection.EDUCATION)}>
           Education
-        </button>
-        <button className={styles.journey__subTitle} onClick={() => setJourney(JourneySection.EXPERIENCE)}>
+        </p>
+        <p className={styles.journey__subTitle} onClick={() => setJourney(JourneySection.EXPERIENCE)}>
           Experience
-        </button>
+        </p>
       </div>
       {journey === JourneySection.EDUCATION ? (
         <section className={styles.journey__subsection}>

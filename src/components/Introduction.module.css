@@ -2,11 +2,13 @@
   width: 90%;
   margin: 40px auto;
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: 1fr 1.75fr;
 }
 
 .introduction__content {
-  align-content: center;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
 }
 
 .introduction__content p:nth-child(1) {
@@ -15,25 +17,25 @@
 }
 
 .introduction__content p:nth-child(2) {
-  font-size: 16px;
-  font-weight: 400;
-  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.introduction__content p:nth-child(3) {
+  word-break: break-all;
 }
 
 .introduction__content span {
-  display: inline-block;
+  display: inline-flex;
   font-size: 16px;
   padding: 10px 20px;
-  margin: 10px 20px 10px 0px;
+  margin: 15px 20px 0px 0px;
   border-left: 2px solid orange;
   box-shadow: 1px 1px 10px gray;
 }
 
 .introduction__image {
-  width: 100%;
+  width: 75%;
   object-fit: contain;
-  justify-self: center;
-  align-self: center;
 }
 
 @media (max-width: 1023px) and (orientation: portrait),
@@ -41,33 +43,45 @@
   .introduction {
     margin: 0 auto;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 10px;
   }
 
-  .introduction__content p:nth-child(1) {
-    text-align: start;
-    font-size: 20px;
-  }
-
-  .introduction__content p:nth-child(2),
-  .introduction__content span {
-    font-size: 16px;
+  .introduction__image {
+    width: 100%;
   }
 }
 
-@media (max-width: 600px) and (orientation: portrait) {
+@media (max-width: 600px) and (orientation: portrait),
+(max-width: 768px) and (orientation: landscape) {
   .introduction__content p:nth-child(1) {
     font-size: 18px;
   }
 
+  .introduction__content p:nth-child(1) {
+    font-size: 16px;
+  }
+
   .introduction__content p:nth-child(2),
+  .introduction__content p:nth-child(3),
   .introduction__content span {
     font-size: 14px;
   }
 }
 
-@media (max-width: 1023px) and (orientation: landscape) {
+@media (max-width: 768px) and (orientation: landscape) {
+  .introduction {
+    display: block;
+  }
+
+  .introduction__image {
+    width: 150px;
+    float: left;
+    margin: 0 10px 0px 0;
+  }
+}
+
+/* @media (max-width: 1023px) and (orientation: landscape) {
   .introduction {
     display: flex;
     flex-direction: column-reverse;
@@ -77,4 +91,4 @@
   .introduction__image {
     width: 200px;
   }
-}
+} */

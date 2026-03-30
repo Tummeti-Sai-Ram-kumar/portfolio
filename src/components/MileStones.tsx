@@ -28,8 +28,8 @@ export const MileStones: FC = (): ReactElement => {
     <section className={styles.mileStones}>
       <h2 className={styles.mileStones__title}>More About Me</h2>
       <section className={styles.mileStones__container}>
-        {mileStones.map(({ header, list }) => (
-          <MileStone header={header} list={list} />
+        {mileStones.map(({ header, list }, index) => (
+          <MileStone key={index} header={header} list={list} />
         ))}
       </section>
     </section>

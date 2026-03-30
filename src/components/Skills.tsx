@@ -34,8 +34,8 @@ export const Skills: FC = (): ReactElement => {
     <section className={styles.skills}>
       <h2 className={styles.skills__title}>Skills</h2>
       <div className={styles.skills__container}>
-        {skills.map((skill) => (
-          <article className={styles.skills__article}>
+        {skills.map((skill, index) => (
+          <article key={index} className={styles.skills__article}>
             <p className={styles.skills__articleTitle}>{skill.header}</p>
             <ul className={styles.skills__articleList}>
               {skill.tech.map((e, index) => (

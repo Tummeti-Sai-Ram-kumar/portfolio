@@ -6,7 +6,9 @@ import styles from "./Introduction.module.css";
 export const Introduction: FC = (): ReactElement => {
   return (
     <section className={styles.introduction}>
+      <img src={profile} className={styles.introduction__image} alt="profile" />
       <div className={styles.introduction__content}>
+        <p>I'm Tummeti Sai Ram Kumar</p>
         <p>I'm a Software Development Engineer</p>
         <p className={styles.introduction__article}>
           With over 2.5 years of experience building scalable and high-performance applications. I enjoy solving real-time problems and
@@ -18,7 +20,6 @@ export const Introduction: FC = (): ReactElement => {
         </p>
         <span>Strive To Be The Best</span> <span>Infinity is my Limit</span>
       </div>
-      <img src={profile} className={styles.introduction__image} alt="profile" />
     </section>
   );
 };

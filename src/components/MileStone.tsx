@@ -21,8 +21,8 @@ export const MileStone: FC<MileStoneProps> = ({ header, list }): ReactElement =>
         {header}
       </p>
       <ul className={styles.mileStones__articleList}>
-        {list.map((value) => (
-          <li className={styles.mileStones__articleItem}>{value}</li>
+        {list.map((value, index) => (
+          <li key={index} className={styles.mileStones__articleItem}>{value}</li>
         ))}
       </ul>
     </article>
