@@ -15,12 +15,12 @@
 }
 
 .contact__content p:nth-child(1) {
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .contact__content p:nth-child(2) {
-  font-size: inherit;
+  font-size: 16px;
   text-wrap: nowrap;
 }
 .contact__quickLinks {
@@ -82,23 +82,16 @@
   .contact__container {
     display: flex;
     flex-direction: column;
-    font-size: 14px;
     gap: 20px;
-  }
-
-  .contact__content {
-    font-size: 14px;
   }
 
   .contact__content p:nth-child(1) {
     font-size: 16px;
+    font-weight: 400;
   }
 
   .contact__content p:nth-child(2) {
     font-size: 14px;
-    line-height: 1.4;
-    text-wrap: wrap;
-    overflow-wrap: anywhere;
   }
 
   .contact__quickLink {
