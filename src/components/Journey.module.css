@@ -57,7 +57,7 @@
   justify-self: end;
 }
 
-@media (max-width: 1365px), (max-height: 499px)  {
+@media (max-width: 1024px), (max-height: 499px)  {
   .journey .journey__article {
     width: 100%;
     transform: none;
