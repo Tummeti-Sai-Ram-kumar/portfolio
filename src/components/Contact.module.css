@@ -21,7 +21,7 @@
 
 .contact__content p:nth-child(2) {
   font-size: 16px;
-  text-wrap: nowrap;
+  overflow-wrap: break-word;
 }
 .contact__quickLinks {
   display: flex;

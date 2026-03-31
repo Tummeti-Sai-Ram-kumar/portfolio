@@ -16,7 +16,7 @@
 
 .introduction__content p:nth-child(3) {
   font-size: 16px;
-  word-break: break-all;
+  overflow-wrap: break-word;
 }
 
 .introduction__content span {
