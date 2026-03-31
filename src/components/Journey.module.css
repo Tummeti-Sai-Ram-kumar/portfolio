@@ -24,7 +24,7 @@
   cursor: pointer;
 }
 
-.journey__subTitle:hover {
+.journey__subTitle:hover, .journey__subTitle--active {
   color: orange;
 }
 

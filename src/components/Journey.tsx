@@ -1,21 +1,22 @@
-import { useState, type FC, type ReactElement } from "react";
+import type { FC, ReactElement } from "react";
+import { useState } from "react";
 
 import { JourneySection } from "./types";
 
 import styles from "./Journey.module.css";
 
 export const Journey: FC = (): ReactElement => {
-  const [journey, setJourney] = useState(JourneySection.EDUCATION);
+  const [journey, setJourney] = useState(JourneySection.EXPERIENCE);
 
   return (
     <section className={styles.journey}>
-      <h2 className={styles.journey__title}>My Journey</h2>
+      <h2 className={styles.journey__title}>Timeline</h2>
       <div className={styles.journey__subTitleContainer}>
-        <p className={styles.journey__subTitle} onClick={() => setJourney(JourneySection.EDUCATION)}>
-          Education
-        </p>
-        <p className={styles.journey__subTitle} onClick={() => setJourney(JourneySection.EXPERIENCE)}>
+        <p className={`${styles.journey__subTitle} ${journey === JourneySection.EXPERIENCE ? styles['journey__subTitle--active'] : ''}`} onClick={() => setJourney(JourneySection.EXPERIENCE)}>
           Experience
+        </p>
+        <p className={`${styles.journey__subTitle} ${journey === JourneySection.EDUCATION ? styles['journey__subTitle--active'] : ''}`} onClick={() => setJourney(JourneySection.EDUCATION)}>
+          Education
         </p>
       </div>
       {journey === JourneySection.EDUCATION ? (
