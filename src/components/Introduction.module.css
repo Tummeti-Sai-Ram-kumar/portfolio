@@ -34,9 +34,9 @@
 }
 
 @media (max-width: 1023px) and (orientation: portrait),
- (max-height: 500px) and (orientation: portrait) {
+(max-height: 500px) and (orientation: portrait) {
   .introduction {
-    margin: 0 auto;
+    margin: 0 auto 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -61,16 +61,21 @@
   .introduction__content span {
     font-size: 14px;
   }
-}
 
-@media (max-width: 768px) and (orientation: landscape) {
-  .introduction {
-    display: block;
-  }
-
-  .introduction__image {
-    width: 150px;
-    float: left;
-    margin: 8px 10px 0 0;
+  .introduction__content span {
+    padding: 5px 10px;
+    margin: 10px 10px 0 0;
   }
 }
+
+  @media (max-width: 768px) and (orientation: landscape) {
+    .introduction {
+      display: block;
+    }
+
+    .introduction__image {
+      width: 150px;
+      float: left;
+      margin: 8px 10px 0 0;
+    }
+  }
