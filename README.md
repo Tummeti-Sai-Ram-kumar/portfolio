@@ -1,4 +1,5 @@
 # Portfolio Website
+Version: 0.0.7
 
 A simple personal portfolio website built with **React**, **TypeScript**, and **Vite**. It highlights key sections such as introduction, journey, skills, milestones, and contact details.
 
