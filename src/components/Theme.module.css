@@ -23,14 +23,13 @@
 @media (max-width: 600px) and (orientation: portrait),
 (max-width: 768px) and (orientation: landscape) {
   .theme {
-    top: 53%;
-    right: 0;
-    left: unset;
+    top: 0;
+    left: 100%;
     width: 30px;
     height: 30px;
     justify-content: center;
     align-items: end;
-    transform: none;
+    transform: translateX(-100%);
     border: 1px solid orange;
   }
 
