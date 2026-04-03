@@ -42,9 +42,8 @@
   position: relative;
   padding: 10px 20px;
   margin-right: 40px;
-  border-left: 2px solid orange;
   box-shadow: 1px 1px 10px gray;
-  color: black;
+  color: var(--text-color);
   text-decoration: none;
   cursor: pointer;
 }
@@ -56,7 +55,7 @@
   position: absolute;
   width: 0;
   inset: 0;
-  background: linear-gradient(135deg, #f6d365, #fda085);
+  background: var(--header-bg);;
   transition: width 0.3s ease-in;
 }
 

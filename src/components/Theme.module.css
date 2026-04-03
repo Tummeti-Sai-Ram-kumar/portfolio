@@ -1,0 +1,41 @@
+.theme {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background: var(--background-color);
+  transform: translate(-50%, -50%);
+  border: 2px solid orange;
+  box-shadow: 1px 1px 10px gray;
+  cursor: pointer;
+}
+
+.theme__icon {
+  width: 40px;
+  fill: var(--text-color); 
+  padding-right: 5px;
+}
+
+@media (max-width: 600px) and (orientation: portrait),
+(max-width: 768px) and (orientation: landscape) {
+  .theme {
+    top: 53%;
+    right: 0;
+    left: unset;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: end;
+    transform: none;
+    border: 1px solid orange;
+  }
+
+  .theme__icon {
+    width: 15px;
+    padding-right: 0;
+  }
+}

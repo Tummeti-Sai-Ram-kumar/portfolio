@@ -23,7 +23,7 @@
   text-align: center;
   align-content: center;
   padding: 10px;
-  background: linear-gradient(135deg, #f6d365, #fda085);
+  background: var(--header-bg);;
 }
 
 .skills__articleList {

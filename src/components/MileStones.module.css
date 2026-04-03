@@ -18,7 +18,7 @@
   position: relative;
   padding: 10px;
   font-size: 18px;
-  background: linear-gradient(135deg, #f6d365, #fda085);
+  background: var(--header-bg);;
   cursor: pointer;
 }
 
@@ -28,7 +28,7 @@
   position: absolute;
   top: 30%;
   right: 8%;
-  background: black;
+  background: var(--text-color);
   width: 2px;
   height: 20px;
   transition: transform 0.3s ease-in-out;
