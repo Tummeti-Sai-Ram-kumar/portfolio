@@ -34,7 +34,6 @@
   position: relative;
   width: 50px;
   height: 50px;
-  border-radius: 50%;
   border: 1px solid var(--text-color);
   cursor: pointer;
 }
@@ -68,14 +67,6 @@
 .contact__quickLink:hover .contact__icon {
   transform: scale(0.8) rotateY(360deg);
 }
-
-/* [data-theme='dark'] .contact__quickLink:hover .contact__icon {
-  fill: black;
-}
-
-[data-theme='light'] .contact__quickLink:hover .contact__icon {
-  fill: white;
-} */
 
 @media (max-width: 600px) and (orientation: portrait),
 (max-width: 768px) and (orientation: landscape) {

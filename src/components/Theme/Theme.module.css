@@ -24,18 +24,19 @@
 @media (max-width: 600px) and (orientation: portrait),
 (max-width: 768px) and (orientation: landscape) {
   .theme {
-    top: 0;
-    left: 100%;
+    left: -2px;
+    top: 25%;
     width: 30px;
-    height: 30px;
+    height: 60px;
     justify-content: center;
-    align-items: end;
-    transform: translateX(-100%);
+    align-items: center;
+    transform: none;
     border: 1px solid orange;
   }
 
   .theme__icon {
     width: 15px;
     padding-right: 0;
+    padding-top: 5px;
   }
 }

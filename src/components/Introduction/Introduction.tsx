@@ -1,6 +1,6 @@
 import type { FC, ReactElement } from "react";
 
-import profile from "../assets/profile.jpeg";
+import profile from "../../assets/profile.jpeg";
 
 import styles from "./Introduction.module.css";
 export const Introduction: FC = (): ReactElement => {

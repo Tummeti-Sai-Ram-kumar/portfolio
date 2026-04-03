@@ -1,7 +1,7 @@
 import type { FC, ReactElement } from "react";
 import { useState } from "react";
 
-import { JourneySection } from "./types";
+import { JourneySection } from "../../types";
 
 import styles from "./Journey.module.css";
 

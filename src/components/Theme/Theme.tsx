@@ -1,11 +1,11 @@
 import type { FC, ReactElement } from "react";
 import { useLayoutEffect } from "react";
 
-import { usePortfolioContext } from "./PortfolioContext";
+import { usePortfolioContext } from '../../PortfolioContext';
 
 import { ThemeLight } from "./ThemeLight";
 import { ThemeDark } from "./ThemeDark";
-import { ThemeMode } from "./types";
+import { ThemeMode } from "../../types";
 
 import styles from "./Theme.module.css";
 
