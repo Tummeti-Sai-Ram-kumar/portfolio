@@ -8,7 +8,7 @@ import { Contact } from "./components/Contact";
 import { Projects } from "./components/Projects";
 import { Theme } from "./components/Theme";
 
-import { PortfolioContextProvider } from "./PortfolioContext";
+import { PortfolioContextProvider } from "./components/PortfolioContext";
 
 export const App: FC = (): ReactElement => {
 
