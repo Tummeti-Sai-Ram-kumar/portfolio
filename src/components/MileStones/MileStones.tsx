@@ -11,7 +11,12 @@ const mileStones = [
   },
   {
     header: "Achievements",
-    list: ["Great India Alexa Hackathon - You’ve Got Skills Winner", "Indian Space Research Organisation Space Week - Finalist"],
+    list: [
+      "Spotlight Award — Outstanding individual impact and excellence",
+      "Squad Synergy Award — Exceptional teamwork driving collective success",
+      "Great India Alexa Hackathon — You’ve Got Skills Winner",
+      "ISRO Space Week — Finalist (Indian Space Research Organisation)"
+    ]
   },
   {
     header: "Languages",
